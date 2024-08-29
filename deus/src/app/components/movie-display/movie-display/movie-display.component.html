@@ -1,0 +1,44 @@
+<app-bar></app-bar>
+<div class="movie-display-container">
+    <div class="section-1">
+        <div class="image-wrapper">
+            <img src="{{movie.poster_url}}" (error)="onImageError($event)" alt="">
+        </div>
+        <div class="rent-wrapper">
+            <div class="btn" (click)="onRentClick()">Rent</div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="movie-details-wrapper">
+            <div class="movie-title">
+                <h1>{{movie.title}}</h1>
+            </div>
+            <div class="movie-details">
+                <div class="movie-details-item">
+                    Release Date: {{movie.pub_date}}
+                </div>
+                <div class="movie-details-item">
+                    Duration: {{movie.duration}}'
+                </div>
+                <div class="movie-details-item">
+                    Rating: {{movie.rating}}
+                </div>
+            </div>
+            <div class="movie-desc-wrapper">
+                <h2>Description</h2>
+                <div class="movie-desc">
+                    {{movie.description}}
+                </div>
+            </div>
+        </div>
+        <div class="genres-wrapper">
+            <div class="genre-label">
+                Genres: 
+            </div>
+            <div class="genre" *ngFor="let category of movie.categories">
+                {{category}}
+            </div>
+        </div>
+    </div>
+
+</div>

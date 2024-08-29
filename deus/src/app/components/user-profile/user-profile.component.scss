@@ -1,0 +1,149 @@
+.bar-wrapper {
+    width: 100vw;
+    height: 8vh;
+}
+
+.profile-container {
+    width: 80vw;
+    height: 92vh;
+    background-color: rgba(14, 7, 46, 0.9);
+    margin-left: 10vw;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.rentals-label {
+    margin-bottom: 2vh;
+    cursor: pointer;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding: 1%;
+    background-color: rgba(26, 13, 83, 0.9);
+    box-shadow: 5px 5px 5px black;
+}
+
+.rentals-label :hover {
+    background-color: rgba(38, 20, 119, 0.9);
+}
+
+.pfp-profile-img {
+    height: 25vh;
+}
+
+.image-wrapper {
+    padding-bottom: 3vh;
+    border-bottom: 2px solid black;
+}
+
+.user-info {
+    width: 25vw;
+    height: 92vh;
+    text-align: center;
+    box-shadow: 10px 0px 8px black;
+    z-index: 99;
+}
+
+.user-details-wrapper {
+    width: 25vw;
+}
+
+.user-label {
+    padding-bottom: 2vh;
+}
+
+.user-details {
+    font-size: 1vw;
+    text-align: left;
+    padding-left: 3vw;
+    width: 25vw;
+    height: 32vh;
+    border-bottom: 2px solid black;
+}
+
+.rental-labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.movie-wrapper {
+    top: 8vh;
+    width: 55vw;
+    height: 92vh;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-wrapper {
+    background-color: rgba(8, 4, 26, 0.9);
+    overflow-y: scroll;
+    height: 55vh;
+}
+
+.active-rentals-item {
+    display: flex;
+}
+
+.active-rentals-items {
+    margin-top: 1vh;
+    padding-left: 3vw;
+}
+
+.active-rentals-item {
+    text-align: left;
+    width: 25vw;
+    margin-bottom: 1vh;
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 2%;
+}
+
+.rental-btn {
+    text-align: right;
+}
+
+.rental-movie {
+    width: 20vw;
+}
+
+.rental-movie-details {
+    padding-top: 1vh;
+    font-size: 0.8rem;
+}
+
+.rental-movie-name {
+    font-size: 3vh;
+}
+
+.sort-paginate{
+    display: flex;    
+}
+
+.sort-wrapper {
+    padding-left: 4vw;
+    padding-top: 3vh;
+    display: flex;
+}
+
+.sort-button {
+    margin-left: 1vw;
+}
+
+.paginator {
+    flex: 30%;
+}
+
+mat-paginator {
+    background: none;
+}

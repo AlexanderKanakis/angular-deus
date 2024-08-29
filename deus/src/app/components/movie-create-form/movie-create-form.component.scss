@@ -1,0 +1,14 @@
+.form-wrapper{
+    padding-top: 8vh;
+    padding-left: 8vw;
+}
+
+.movie-create-field {
+    display: grid;
+    grid-template-columns: 25vw 25vw 15vw;
+    margin-bottom: 2vh;
+}
+
+#description {
+    height: 40vh;
+}

@@ -1,0 +1,62 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 16vw 84vw;
+}
+
+.movie-container {
+    margin-left: 5vw;
+    width: 78vw;
+}
+
+.browse {
+    width: 70vw;
+    border-bottom: 3px solid rgb(14, 7, 46);
+}
+
+.sidebar {
+    width: 16vw;
+    height: 84vh;
+    background-color: rgba(14, 7, 46, 0.9);
+    box-shadow: 10px 0px 8px black;
+}
+
+.item {
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 90;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 30vw;
+}
+
+.paginator {
+    z-index: 99;
+    position:fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(14, 7, 46);
+}
+
+.cust-bar {
+    height: 8vh;
+    width: 100vw;
+    min-height: 50px;
+}

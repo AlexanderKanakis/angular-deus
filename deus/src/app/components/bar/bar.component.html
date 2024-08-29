@@ -1,0 +1,18 @@
+<div class="tool-bar-container">
+    <div class="nav-container">
+        <div class="logo" (click)="onChangeRoute()"><b>Re:Video Store</b></div>
+    </div>
+    <div class="search">
+        <form (ngSubmit)="onNameSubmit($event)">
+            <input type="text" class="movie-name-input" placeholder="Search Movie" />
+        </form>
+    </div>
+    <div class="user-btn" (click)="onUserClick()">
+        <div class="user-image">
+            <img src="/pfp.webp" class="pfp" alt="">
+        </div>
+        <div class="user-name">
+            <b>{{name}}</b>
+        </div>
+    </div>
+</div>

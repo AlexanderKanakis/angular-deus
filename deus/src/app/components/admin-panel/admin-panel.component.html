@@ -1,0 +1,32 @@
+<div class="admin-panel-container">
+    <div>
+        <app-bar></app-bar>
+    </div>
+    <div class="admin-panel">
+        <div class="sidebar">
+            <div class="siderbar-element" (click)="onCreateMovieClick()">
+                Create Movie
+            </div>
+            <div class="siderbar-element" (click)="onRentalsClick()">
+                View Rentals
+            </div>
+            <div class="siderbar-element" (click)="onMetricsClick()">
+                Metrics
+            </div>
+            <div class="logout-button-wrapper">
+                <div class="btn" (click)="onLogoutClick()"> Logout</div>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="metrics-wrapper" [hidden]="!toggleMetrics">
+                <app-charts></app-charts>
+            </div>
+            <div class="movie-create-wrapper" [hidden]="!toggleMovie">
+                <app-movie-create-form></app-movie-create-form>
+            </div>
+            <div class="rental-view-wrapper" [hidden]="!toggleRentals">
+                <app-user-profile></app-user-profile>
+            </div>
+        </div>
+    </div>
+</div>

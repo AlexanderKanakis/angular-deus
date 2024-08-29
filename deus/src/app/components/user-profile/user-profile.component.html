@@ -1,0 +1,75 @@
+<div class="bar-wrapper" [hidden]="isAdmin">
+    <app-bar (nameEvent)="onNameEvent($event)"></app-bar>
+</div>
+<div class="profile-container">
+    <div class="user-info" [hidden]="isAdmin">
+        <div class="image-wrapper">
+            <img class="pfp-profile-img" src="/pfp.webp">
+        </div>
+        <div class="user-details-wrapper">
+            <div class="user-label">
+                <h6>User Info</h6>
+            </div>
+            <div class="user-details">
+                <div class="user-details-line">
+                    Name: {{user.firstName}} {{user.lastName}}
+                </div>
+                <div class="user-details-line">
+                    Email: {{user.email}}
+                </div>
+                <div class="user-details-line">
+                    Wallet: {{user.wallet}}
+                </div>
+            </div>
+        </div>
+        <div class="logout-button-wrapper">
+            <div class="btn" (click)="onLogoutClick()"> Logout</div>
+        </div>
+    </div>
+    <div class="movie-wrapper">
+        <div class="active-rentals">
+            <div class="rental-labels">
+                <div class="rentals-label" (click)="onActiveClick()">
+                    <h6>Active Rentals</h6>
+                </div>
+                <div class="rentals-label" (click)="onHistoryClick()">
+                    <h6>Rental History</h6>
+                </div>
+            </div>
+            
+            <div class="grid-wrapper">
+                <div class="active-rentals-items grid">
+                    <div class="active-rentals-item" *ngFor="let movie of moviesDisplay">
+                        <div class="rental-movie">
+                            <div class="rental-movie-name">
+                                <b>{{movie.movie}}</b>
+                            </div>
+                            <div class="rental-movie-details">
+                                Rent Date: {{movie.rental_date}}
+                                <div [hidden]="movie.return_date===null">
+                                    Return Date: {{movie.return_date}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rental-btn" [hidden]="!showsCurrent || isAdmin">
+                            <div class="btn" (click)="onReturnClick(movie)">Return</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sort-paginate">
+            <div class="sort-wrapper">
+                <div class="sort-label">
+                    Sort By Date
+                </div>
+                <div class="sort-button">
+                    <input type="checkbox" (click)="onSortClick($event)">
+                </div>
+            </div>
+            <div class="paginator">
+                <mat-paginator [length]="totalItems" [pageSize]="pageSize" [pageIndex]="currentPaginationIndex" (page)="pageChanged($event)"></mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>

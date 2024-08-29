@@ -1,0 +1,26 @@
+.details {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 12px;
+    padding-top: 2vh;
+}
+
+
+.image-wrapper {
+    display: inline-block;
+    width: 8vw;
+    height: 13vh;
+    min-height: 80px;
+}
+
+.movie-cell-wrapper {
+    width: 30vw;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+}
+
+.details-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

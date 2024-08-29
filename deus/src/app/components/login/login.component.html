@@ -1,0 +1,20 @@
+<body>
+    <section>
+        <div class="label">
+            <h2>Re:(dundant) Movie Store</h2>
+            Seriously, we have streaming services now
+        </div>
+    </section>
+    <section class="container">
+        <div class="login-container">
+            <div class="form-container">
+                <h3 class="opacity">LOGIN</h3>
+                <form>
+                    <input name="username "type="text" placeholder="USERNAME" [(ngModel)]="loginObj.username"/>
+                    <input name="password" type="password" placeholder="PASSWORD" [(ngModel)]="loginObj.password"/>
+                    <button (click)="onLogin()" class="opacity">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>

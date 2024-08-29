@@ -1,0 +1,18 @@
+<div class="categories-wrapper side-bar-element">
+    <div class="label cat-label" (click)="onCategoryClick()">
+        <b> Categories</b>
+    </div>
+    <div class="categories" [hidden]="catHidden">
+        <div class="category" *ngFor="let category of categories" (click)="onCategoryNameClick($event)">{{category.name}}</div>
+    </div>
+</div>
+<div class="year-wrapper side-bar-element">
+    <div class="label">
+        <b> Year</b>
+    </div>
+    <form (ngSubmit)="onYearSubmit($event)">
+        <input type="text" class="year-input" placeholder="1998, 2003, etc." />
+    </form>
+</div>
+
+

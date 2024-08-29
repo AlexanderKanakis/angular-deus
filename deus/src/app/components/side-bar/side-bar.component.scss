@@ -1,0 +1,46 @@
+.label{
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    width: 100%;
+    padding-left: 2vw;
+}
+
+.cat-label :hover {
+    background-color: rgba(38, 20, 119, 0.9);
+    cursor: pointer;
+}
+
+.year-input {
+    width: 14vw;
+}
+
+body {
+    width: 100%
+}
+
+.categories {
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.category {
+    margin-bottom: 1vh;
+}
+
+.categories :hover {
+    background-color: rgba(38, 20, 119, 0.9);
+    cursor: pointer;
+}
+
+
+.btn {
+    background: none;
+}
+
+.side-bar-element {
+    width: 15vw;
+    padding-bottom: 2vh;
+    border-bottom: 2px solid black;
+    text-align: center;
+}

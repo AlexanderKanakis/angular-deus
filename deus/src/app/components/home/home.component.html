@@ -1,0 +1,22 @@
+<div class="cust-bar">
+    <app-bar (nameEvent)="onNameEvent($event)"></app-bar>
+</div>
+<div class="main-container">
+    <div class="sidebar">
+        <app-side-bar (yearEvent)="onYearEvent($event)" (categoryEvent)="onCategoryEvent($event)"></app-side-bar>
+    </div>
+    <div class="movie-container">
+        <div class="browse">
+            <h6> Library </h6>
+        </div>        
+        <div class="movies">
+            <app-movie-cell class="item"
+                *ngFor="let movie of moviesDisplay"
+                [movie] = "movie"
+            ></app-movie-cell>
+        </div>
+    </div>
+</div>
+<div class="paginator">
+    <mat-paginator style="background: none;" [length]="totalItems" [pageSize]="pageSize" [pageIndex]="currentPaginationIndex" (page)="pageChanged($event)"></mat-paginator>
+</div>

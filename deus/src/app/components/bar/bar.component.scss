@@ -1,0 +1,62 @@
+.tool-bar-container {
+    width: 100%;
+    height: 8vh;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    font-stretch: expanded;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 2vw;
+    cursor: pointer;
+    color: red;
+  }
+
+  .user-btn {
+    margin-top: 1vh;
+    height: 6vh;
+    background-color: red;
+    text-align: center;
+    width: 7vw;
+    display: flex;
+    align-items:center;
+    border-radius: 8px;
+    margin-left: auto; 
+    margin-right: 0;
+    min-height: 37px;
+    min-width: 70px;
+    cursor: pointer;
+  }
+
+  .movie-name-input {
+    width: 25vw;
+    height: 5vh;
+    min-height: 35px;
+  }
+
+  .pfp {
+    height: 4vh;
+    min-height: 25px;
+    border-radius: 50%;
+  }
+
+  .user-name {
+    font-size: 2.5vh;
+    padding-left: 1vh;
+  }
+
+
+  .search {
+    margin-top: 1.5vh;
+    text-align: center;
+  }
+  

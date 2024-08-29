@@ -1,0 +1,16 @@
+<div class="movie-cell-wrapper" (click)="onMovieClick()">
+        <div class="image-wrapper">
+            <img [src]="movie.poster_url" height="100%" fill/>
+        </div>
+        <div class="details">
+            <div class="details-item details-title">
+                <b>{{movie.title}}</b>
+            </div>
+            <div class="details-item">
+                Rating: {{movie.rating}}
+            </div>
+            <div class="details-item">
+                Duration: {{movie.duration}}'
+            </div>
+        </div>
+</div>

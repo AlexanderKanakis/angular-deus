@@ -1,0 +1,45 @@
+.admin-panel-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 7, 46);
+    overflow-x: hidden;
+}
+
+.admin-panel {
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+}
+
+.sidebar {
+    height: 92vh;
+    width: 20vw;
+    z-index: 99;
+    border-right: black solid 3px;
+}
+
+.main-panel {
+    height: 92vh;
+    width: 80vw;
+}
+
+.siderbar-element {
+    border-radius: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgb(22, 11, 70);
+    cursor: pointer;
+    margin-top: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.logout-button-wrapper {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.siderbar-element :hover {
+    background-color: rgb(38, 20, 119);
+}

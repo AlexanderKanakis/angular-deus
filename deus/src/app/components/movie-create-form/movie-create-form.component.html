@@ -1,0 +1,32 @@
+<div class="form-wrapper">
+    <form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
+        <div class="movie-create-field">
+            <label class="movie-create-label" for="title">Title</label>
+            <input class="movie-create-input" id="title" type="text" formControlName="title">
+        </div>
+        <div class="movie-create-field">
+            <label class="movie-create-label" for="pub_date">Publication Date</label>
+            <input class="movie-create-input" id="pub_date" type="text" placeholder="Year" formControlName="pub_date">
+        </div>
+        <div class="movie-create-field">
+            <label class="movie-create-label" for="duration">Duration</label>
+            <input class="movie-create-input" id="duration" type="text" placeholder="In minutes" formControlName="duration">
+        </div>
+        <div class="movie-create-field">
+            <label class="movie-create-label" for="categories">Categories</label>
+            <input id="categories" type="text" placeholder="Separate with commas" readonly formControlName="categories">
+            <select name="cat-selector" id="cat-selector">
+                <option *ngFor="let category of categories" value={{category.name}} (click)="onCatClick($event)">{{category.name}}</option>
+            </select>
+        </div>
+        <div class="movie-create-field">
+            <label class="movie-create-label" for="rating">Rating</label>
+            <input class="movie-create-input" id="rating" type="text" formControlName="rating">
+        </div>
+        <div class="movie-create-field">
+            <label class="movie-create-label" for="description">Description</label>
+            <input class="movie-create-input" id="description" type="text" formControlName="description">
+        </div>
+        <div class="btn" type="submit" (click)="onSubmit()">Create</div>
+    </form>
+</div>
